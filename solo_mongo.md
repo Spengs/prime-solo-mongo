@@ -1,6 +1,6 @@
 <!-- Create a collection named orders. -->
 db.createCollection('orders')
-var orders = orders.db
+var orders = db.orders
 
 <!-- Insert at least 3 documents that represent an order. IMPORTANT: See section below for fields. -->
 orders.insert({orderDate: new Date('August 29, 2016'), orderTotal: 100.00, lineItems: [{unitPrice: 100, quantity: 1, productName: "Thing"}]})
